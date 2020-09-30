@@ -46,11 +46,11 @@ func TestMapasSet(t *testing.T) {
 	/* 用map来实现set */
 	mySet := map[int]bool{} // 声明
 	mySet[1] = true         //	添加元素
-	if i := 3; mySet[i] {	// 检查元素是否存在
+	if i := 3; mySet[i] {   // 检查元素是否存在
 		t.Logf("%d is existing\n", i)
 	} else {
 		t.Logf("%d is not existing\n", i)
 	}
-	t.Log(len(mySet))	// 查看set的长度
-	delete(mySet,1) // 删除元素
+	t.Log(len(mySet)) // 查看set的长度
+	delete(mySet, 1)  // 删除元素
 }

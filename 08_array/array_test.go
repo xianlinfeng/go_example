@@ -21,13 +21,13 @@ func TestArray(t *testing.T) {
 	fmt.Println("c: ", c)
 
 	//数组的遍历1：
-	for i:=0;i< len(c);i++{
-		fmt.Printf("c[%d]= %d \n",i,c[i])
+	for i := 0; i < len(c); i++ {
+		fmt.Printf("c[%d]= %d \n", i, c[i])
 	}
 
 	//数组的遍历2：
-	for index, elem:= range c{
-		fmt.Printf("c[%d]= %d \n",index,elem)
+	for index, elem := range c {
+		fmt.Printf("c[%d]= %d \n", index, elem)
 	}
 }
 
@@ -46,9 +46,9 @@ func TestArrayCompare(t *testing.T) {
 }
 
 // 多维数组
-func TestMultiDimensionArray(t *testing.T){
+func TestMultiDimensionArray(t *testing.T) {
 	var d [2][3]int
-	d = [2][3]int{{1,2,3}, {4,5,6}}
+	d = [2][3]int{{1, 2, 3}, {4, 5, 6}}
 	fmt.Println(d)
 
 	//二维array和二维slices不一样
@@ -58,5 +58,5 @@ func TestMultiDimensionArray(t *testing.T){
 			twoD[i][j] = i + j
 		}
 	}
-	fmt.Println( twoD)
+	fmt.Println(twoD)
 }

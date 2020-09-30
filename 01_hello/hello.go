@@ -1,9 +1,9 @@
 package main
 
-import fm "fmt"  // 可以用fm来做fmt的别名
+import fm "fmt" // 可以用fm来做fmt的别名
 
 /* 包管理
-	1. go get -u 强制从⽹网络更更新远程依赖
+1. go get -u 强制从⽹网络更更新远程依赖
 */
 
 /* init 函数*/

@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+var s string = "Hello world!" // function外不能使用短格式
+
 func main() {
 
 	// 基础类型： bool, int, float, byte, rune, complex
