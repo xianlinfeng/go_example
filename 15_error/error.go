@@ -17,14 +17,13 @@ func f1(arg int) (int, error) {
 	return arg + 3, nil
 }
 
-
 // 一个struct可以来实现Error()
 type argError struct {
 	arg  int    // index
 	prob string // content
 }
 
-func (e *argError) Error() string {  //该struct实现了Error()
+func (e *argError) Error() string { //该struct实现了Error()
 	return fmt.Sprintf("%d - %s", e.arg, e.prob)
 }
 
@@ -53,7 +52,7 @@ func main() {
 	}
 
 	_, e := f2(42)
-	if ae, ok := e.(*argError); ok {
+	if ae, ok := e.(*argError); ok { //断言，判断error是不死argError
 		fmt.Println(ae.arg)
 		fmt.Println(ae.prob)
 	}

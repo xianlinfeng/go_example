@@ -9,7 +9,7 @@ import (
 /*
 	方法一：  waitgroup
 	方法二：  var ch chan bool，
-	方法三：  此方法
+	方法三：  此方法，遍历chan，直到取出所有的结果
 */
 
 func AllResponse() string {
