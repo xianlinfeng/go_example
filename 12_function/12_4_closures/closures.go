@@ -2,7 +2,8 @@ package main
 
 import "fmt"
 
-// 闭包：一个func1的返回值是另一个func2，每次call这个func1的时候，都会访问（或更改）其内部的参数，该参数也在func2中使用。
+// 闭包：一个func1的返回值是另一个func2，每次call这个func1的时候，都会访问（或更改）其内部的参数，
+// 该参数也在func2中使用。
 
 // 这里是将function作为返回值，而28_collection_func 是将function作为参数传入一个function
 
@@ -35,7 +36,7 @@ func fibonacci() func() int { //返回斐波那契数列
 
 func main() {
 
-	nextInt := intSeq()   // 每次call intSeq的时候，就会重置intSeq内部的i的值
+	nextInt := intSeq() // 每次call intSeq的时候，就会重置intSeq内部的i的值
 	fmt.Println(nextInt())
 	fmt.Println(nextInt())
 	fmt.Println(nextInt())

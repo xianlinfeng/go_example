@@ -24,8 +24,8 @@ func plusPlus(a, b, c int) int {
 }
 
 func main() {
-	defer func(){	//延时执行函数，即使panic后，defer仍然会执行
-					// 在os.exit()后，defer不会执行
+	defer func() { //延时执行函数，即使panic后，defer仍然会执行
+		// 在os.exit()后，defer不会执行
 		fmt.Println("clear the resources...")
 		fmt.Println("this is the defer function")
 	}()

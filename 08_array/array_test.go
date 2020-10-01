@@ -47,16 +47,18 @@ func TestArrayCompare(t *testing.T) {
 
 // 多维数组
 func TestMultiDimensionArray(t *testing.T) {
-	var d [2][3]int
-	d = [2][3]int{{1, 2, 3}, {4, 5, 6}}
-	fmt.Println(d)
+	var e [2][3]int
+	e = [2][3]int{{1, 2, 3}, {4, 5, 6}}
+	fmt.Println(e)
 
 	//二维array和二维slices不一样
-	var twoD [2][3]int //二维矩阵
-	for i := 0; i < 2; i++ {
-		for j := 0; j < 3; j++ {
-			twoD[i][j] = i + j
+	const n int = 10
+	var d [n][n]int
+	for i := 0; i < n; i++ {
+		for j := 0; j < n; j++ {
+			d[i][j] = i + j
+			fmt.Printf("%3d", d[i][j])
 		}
+		fmt.Println()
 	}
-	fmt.Println(twoD)
 }
