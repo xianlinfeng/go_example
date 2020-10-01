@@ -28,7 +28,8 @@ func main() {
 
 	t := time.Now()
 	switch { // 没有表达式的switch语句，可以看作一组if...else...语句
-	case t.Hour() < 12: // case语句为一个表达式
+	case t.Hour() < 12: // case语句为一个表达式, case为true的时候，执行。
+
 		fmt.Println("It's before noon")
 	default:
 		fmt.Println("It's after noon")
