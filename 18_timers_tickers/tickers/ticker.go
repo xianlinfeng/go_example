@@ -19,14 +19,16 @@ func main() {
 			case <-done:
 				return
 			case t := <-ticker.C: // 发送时间标签。
-			// 当ticker停止的时候，它不会再从该通道收到任何信息。
+				// 当ticker停止的时候，它不会再从该通道收到任何信息。
 				fmt.Println("Tick at", t)
 			}
 		}
 	}()
 
 	time.Sleep(3600 * time.Millisecond)
-	ticker.Stop() 	// 停止节拍器
-	done <- true
+	ticker.Stop() // 停止节拍器
+	time.Sleep(3600 * time.Millisecond)
 	fmt.Println("Ticker stopped")
+	done <- true
+	fmt.Println("Done")
 }

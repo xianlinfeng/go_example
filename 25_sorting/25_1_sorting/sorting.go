@@ -21,6 +21,6 @@ func main() {
 	sort.Sort(sort.Reverse(sort.IntSlice(ints))) // reverse int逆排序
 	fmt.Println("Reverse:", ints)
 
-	s := sort.IntsAreSorted(ints) //是否已排序
+	s := sort.IntsAreSorted(ints) //是否已排序(逆排序返回false)
 	fmt.Println("Sorted: ", s)
 }
