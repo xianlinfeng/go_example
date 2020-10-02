@@ -2,7 +2,11 @@ package main
 
 import "fmt"
 
+<<<<<<< HEAD
 var s string = "Hello world!" // function外不能使用短格式
+=======
+var test string = "hello " //function 外，不支持短格式赋值
+>>>>>>> b98a5f0... modify on mac
 
 func main() {
 

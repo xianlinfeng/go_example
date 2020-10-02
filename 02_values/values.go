@@ -18,7 +18,7 @@ func main() {
 	type float float32 //包括自定义的类型
 	var f float = 1.1
 	var g float64
-	g = float64(f)
+	g = float64(f) //也必须使用显式类型转换
 	fmt.Println(g)
 
 	//类型的预定义值
