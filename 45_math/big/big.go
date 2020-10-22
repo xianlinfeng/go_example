@@ -33,4 +33,13 @@ func main() {
 	// big Int to string
 	fmt.Printf("a = %v \n", a)
 	fmt.Println(a.String())
+
+	// big.float 浮点数
+	var prec uint = 2048
+	var f = new(big.Float).SetPrec(prec).SetFloat64(1)
+	var g = new(big.Float).SetPrec(prec).SetFloat64(3)
+	f.Quo(f, g)
+	f.Sqrt(f)
+	s := f.Text('f', -1)
+	fmt.Println(s)
 }
